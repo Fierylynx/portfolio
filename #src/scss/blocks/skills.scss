@@ -1,0 +1,38 @@
+.skills {
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+.skills__title {
+  color: $color-black;
+}
+
+.skills__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills__item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.skills__caption {
+  font-family: "IBMPlexSans", sans-serif;
+  font-size: 20px;
+}
+
+.skills__level {
+  width: 100%;
+  background-color: $color-grey;
+}
+
+.skills__level-real {
+  width: 100%;
+  position: relative;
+  text-align: right;
+  line-height: 10px; 
+  background-color: $color-yellow;
+}

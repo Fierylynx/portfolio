@@ -1,0 +1,40 @@
+.markup {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  color: $color-grey;
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: $color-grey;
+  }
+}
+
+.padding {
+  padding: 60px 0;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-family: "IBMPlexSans", sans-serif;
+  font-size: 35px;
+  line-height: 130%;
+  color: $color-black;
+  span {
+    display: block;
+    color: $color-yellow;
+  }
+}
+
+.button {
+  padding: 12px 19px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: $color-black;
+  background-color: $color-white;
+}
