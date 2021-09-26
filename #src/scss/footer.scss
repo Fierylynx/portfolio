@@ -9,10 +9,37 @@
   p {
     margin-bottom: 50px;
   }
+  @media (min-width: $md2+px) {
+    display: flex;
+  }
+}
+
+.footer__content {
+  @media (min-width: $md2+px) {
+    width: 50%;
+    margin-right: 30px;
+  }
 }
 
 .footer__title {
   color: $color-white;
+}
+
+.contact {
+  font-size: 18px;
+  color: $color-white;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.contact__text {
+  margin-right: 10px;
+  font-family: "IBMPlexSans", sans-serif;
+}
+
+.contact__link {
+  color: inherit;
 }
 
 .footer__form {
@@ -21,6 +48,14 @@
     linear-gradient(180deg, #323232 2.16%, #3f3f3f 57.81%, #1c1c1c 98.25%);
   background-blend-mode: multiply, normal;
   box-shadow: -5px 5px 30px rgba(0, 0, 0, 0.25);
+  @media (min-width: $md4+px) {
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 60px;
+  }
+  @media (min-width: $md2+px) {
+    margin-left: auto;  
+  }
 }
 
 .form__title {
@@ -29,6 +64,8 @@
 
 .form__input {
   width: 100%;
+  padding: 0 10px 10px;
+  color: $color-white;
   background-color: transparent;
   border-bottom: 1px solid $color-white;
   &:not(:last-child) {

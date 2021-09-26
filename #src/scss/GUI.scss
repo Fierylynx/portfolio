@@ -25,8 +25,10 @@
   line-height: 130%;
   color: $color-black;
   span {
-    display: block;
     color: $color-yellow;
+  }
+  @media (min-width: $md2+px) {
+    max-width: 520px;
   }
 }
 
@@ -37,4 +39,39 @@
   letter-spacing: 0.03em;
   color: $color-black;
   background-color: $color-white;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: $color-yellow;
+  }
+}
+
+.animation {
+  transition: color 0.3s, text-decoration 0.3s;
+  &:hover {
+    color: $color-yellow;
+    text-decoration: line-through;
+  }
+}
+
+.social {
+  display: flex;
+  padding: 30px 0;
+  @media (min-width: $md2+px) {
+    width: 50%;
+  }
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.social__link {
+  font-size: 20px;
+  color: $color-white;
+  transition: color 0.3s;
+  &:hover {
+    color: $color-yellow;
+  }
 }

@@ -1,5 +1,16 @@
 .portfolio {
   padding-bottom: 120px;
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.portfolio__list {
+  @media (min-width: $md2+px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
 }
 
 .portfolio__item {
